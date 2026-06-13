@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Madam Jii ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ff4d6d,#ff758f,#ffb3c1);
+    min-height:100vh;
+    overflow-x:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:30px 25px;
+    text-align:center;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    position:relative;
+    z-index:2;
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:1rem;
+    margin-bottom:20px;
+    opacity:0.9;
+}
+
+.cake{
+    font-size:70px;
+    margin:15px 0;
+    animation:bounce 2s infinite;
+}
+
+.message{
+    line-height:1.8;
+    font-size:1rem;
+}
+
+button{
+    margin-top:25px;
+    border:none;
+    background:white;
+    color:#ff4d6d;
+    padding:14px 24px;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#surprise{
+    display:none;
+    margin-top:20px;
+    background:rgba(255,255,255,0.2);
+    padding:15px;
+    border-radius:15px;
+    animation:fadeIn 1s ease;
+}
+
+.heart{
+    position:fixed;
+    bottom:-50px;
+    color:white;
+    font-size:25px;
+    animation:float 8s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+footer{
+    margin-top:20px;
+    font-size:0.9rem;
+    opacity:0.9;
+}
+
+@media (max-width:480px){
+    h1{
+        font-size:1.7rem;
+    }
+
+    .message{
+        font-size:0.95rem;
+    }
+
+    .cake{
+        font-size:60px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+<div class="heart" style="left:25%; animation-delay:2s;">❤️</div>
+<div class="heart" style="left:45%; animation-delay:4s;">❤️</div>
+<div class="heart" style="left:65%; animation-delay:1s;">❤️</div>
+<div class="heart" style="left:85%; animation-delay:3s;">❤️</div>
+
+<div class="card">
+
+    <h1>🎉 Happy Birthday Madam Jii ❤️</h1>
+
+    <p class="subtitle">
+        To the most special person in my life ✨
+    </p>
+
+    <div class="cake">🎂</div>
+
+    <div class="message">
+        Dear Madam Jii,<br><br>
+
+        Today is your special day, and I want to remind you
+        how much you mean to me.
+
+        Thank you for your love, care, kindness, and for
+        bringing so much happiness into my life.
+
+        Your smile brightens my world, and your presence
+        makes every day beautiful.
+
+        I wish you endless happiness, success, good health,
+        and all the love your heart deserves.
+
+        May every dream you have come true and may your
+        life always be filled with joy and laughter.
+
+        ❤️ Happy Birthday, Madam Jii ❤️
+    </div>
+
+    <button onclick="showSurprise()">
+        💌 Special Message
+    </button>
+
+    <div id="surprise">
+        My Dear Madam Jii ❤️<br><br>
+
+        You are my happiness, my comfort, and one of the
+        most beautiful blessings in my life.
+
+        Thank you for being you.
+
+        I hope your birthday is filled with love,
+        laughter, and unforgettable memories.
+
+        ❤️ I Love You ❤️
+    </div>
+
+    <footer>
+        Made with ❤️ especially for Madam Jii
+    </footer>
+
+</div>
+
+<script>
+function showSurprise(){
+    document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
